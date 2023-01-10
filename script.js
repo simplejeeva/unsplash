@@ -8,9 +8,9 @@ try{
     var data_fetch=await fetch(api)
     var final_data= data_fetch.json()
     var final_out= await final_data
-    
+  
     for(let i of final_out){
-     
+    
       var image_cre= document.createElement('img')
       image_cre.setAttribute('src',i.urls.thumb)
       document.querySelector('body').append(image_cre)
@@ -31,4 +31,6 @@ window.addEventListener('scroll',()=>{
    console.log(pageno);
    unsplash(pageno)
 })
+ 
+
  
